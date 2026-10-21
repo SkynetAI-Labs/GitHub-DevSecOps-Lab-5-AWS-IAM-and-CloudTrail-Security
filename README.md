@@ -165,3 +165,14 @@ cloud activity investigation, infrastructure change review and accountable
 resource cleanup. Production use would require resolving the documented
 gaps, defining retention and recovery requirements, and testing monitoring
 and incident-response processes.
+
+## Verified GitHub Actions execution
+
+[Workflow run 39657133185](https://github.com/SkynetAI-Labs/GitHub-DevSecOps-Lab-5-AWS-IAM-and-CloudTrail-Security/actions/runs/39657133185)
+completed on 21 October 2026.
+
+- Terraform formatting, initialisation and validation passed.
+- Checkov completed: 55 passed, 8 failed, 0 skipped.
+- The security job and overall workflow failed because the eight documented
+  findings remain open. No checks were suppressed.
+- Runner annotations reported Node.js action-runtime deprecation warnings.
