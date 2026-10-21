@@ -1,0 +1,14 @@
+{
+    "TrailARN": "arn:aws:cloudtrail:eu-north-1:REDACTED_ACCOUNT_ID:trail/lab05-security-trail",
+    "EventSelectors": [
+        {
+            "ReadWriteType": "All",
+            "IncludeManagementEvents": true,
+            "DataResources": [],
+            "ExcludeManagementEventSources": [
+                "rdsdata.amazonaws.com",
+                "kms.amazonaws.com"
+            ]
+        }
+    ]
+}

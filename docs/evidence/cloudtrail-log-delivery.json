@@ -1,0 +1,45 @@
+{
+    "Count": 10,
+    "Files": [
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/",
+            "Size": 0
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/ap-northeast-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_ap-northeast-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "Size": 367
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/ap-northeast-2/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_ap-northeast-2_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "Size": 370
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/ap-northeast-3/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_ap-northeast-3_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "Size": 367
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/ap-south-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_ap-south-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "Size": 364
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/ap-southeast-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_ap-southeast-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "Size": 372
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/eu-north-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_eu-north-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "Size": 360
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/eu-west-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_eu-west-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "Size": 369
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/eu-west-2/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_eu-west-2_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "Size": 368
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/eu-west-3/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_eu-west-3_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "Size": 367
+        }
+    ]
+}

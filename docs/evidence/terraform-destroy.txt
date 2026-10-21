@@ -1,0 +1,18 @@
+aws_iam_role_policy.auditor_permissions: Destroying... [id=lab05-security-auditor:lab05-cloudtrail-event-history]
+aws_cloudtrail.security: Destroying... [id=arn:aws:cloudtrail:eu-north-1:REDACTED_ACCOUNT_ID:trail/lab05-security-trail]
+aws_cloudtrail.security: Destruction complete after 0s
+aws_s3_bucket_server_side_encryption_configuration.cloudtrail_logs: Destroying... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+aws_s3_bucket_public_access_block.cloudtrail_logs: Destroying... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+aws_s3_bucket_policy.cloudtrail_logs: Destroying... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+aws_s3_bucket_versioning.cloudtrail_logs: Destroying... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+aws_s3_bucket_server_side_encryption_configuration.cloudtrail_logs: Destruction complete after 0s
+aws_iam_role_policy.auditor_permissions: Destruction complete after 0s
+aws_iam_role.security_auditor: Destroying... [id=lab05-security-auditor]
+aws_s3_bucket_versioning.cloudtrail_logs: Destruction complete after 0s
+aws_s3_bucket_public_access_block.cloudtrail_logs: Destruction complete after 1s
+aws_iam_role.security_auditor: Destruction complete after 1s
+aws_s3_bucket_policy.cloudtrail_logs: Destruction complete after 1s
+aws_s3_bucket.cloudtrail_logs: Destroying... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+aws_s3_bucket.cloudtrail_logs: Destruction complete after 0s
+
+Apply complete! Resources: 0 added, 0 changed, 8 destroyed.

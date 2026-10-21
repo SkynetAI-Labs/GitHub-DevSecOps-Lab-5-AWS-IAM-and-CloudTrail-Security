@@ -1,0 +1,2 @@
+
+aws: [ERROR]: An error occurred (AccessDeniedException) when calling the LookupEvents operation: User: arn:aws:sts::REDACTED_ACCOUNT_ID:assumed-role/lab05-security-auditor/lab05-auditor-test is not authorized to perform: cloudtrail:LookupEvents because no identity-based policy allows the cloudtrail:LookupEvents action

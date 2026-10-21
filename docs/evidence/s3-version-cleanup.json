@@ -1,0 +1,112 @@
+{
+    "Deleted": [
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/",
+            "VersionId": "C6X5Kn8kkWMTEtIPnoZ4WdlB0Hl_Su43"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/eu-central-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_eu-central-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "tbuaEEG6QFJRbbkzneCk9VXu0bjeVInM"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/eu-west-2/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_eu-west-2_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "Muy.DNS2VMDrxdBq_p_LVlUWZvwPbaJE"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail/eu-north-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail_eu-north-1_20261021T1640Z_OV3PMy3OmYDPkqpz.json.gz",
+            "VersionId": "JGn_HMfoZh7obyC0eZZaRaOaXJU4BI_2"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/us-west-2/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_us-west-2_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "x71uuRHDerbs4xlsZYPeToKsCYupfpR8"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/ap-south-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_ap-south-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "FCYbrowLWuFyI7byOzTkwqBlEH9q.T_r"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/ap-southeast-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_ap-southeast-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "XEXoLA3yXOAOgh9thPSvKyRkBMzxp0vY"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail/eu-north-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail_eu-north-1_20261021T1650Z_FFPC3MYtSOWjRSr2.json.gz",
+            "VersionId": "Yt4lwEbAAEPhSNmRjP.rIr_nnO3x10_n"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/ap-northeast-3/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_ap-northeast-3_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "ya6d6upwywiVEuob5jSSj6gibCFysn_a"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/us-east-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_us-east-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "nkJ_1uVAeRkzUCNHIpCMuKVR33uHD4DH"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/eu-west-3/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_eu-west-3_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "ZMJX1aoJC9YIl.Gka6C6ENoQepdQ8edF"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/sa-east-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_sa-east-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "68WnHoEq.WttNuZM45UZorr1sVehGuj7"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/ap-southeast-2/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_ap-southeast-2_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "VlNt5LSblNch5Yp_elAQIPaHUpVGHZEx"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail/eu-west-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail_eu-west-1_20261021T1645Z_f8bB6Wv8C34a3fVU.json.gz",
+            "VersionId": "w96MwfUFYRFzr4wMDsWQAfLcGdmi9_YA"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail/us-east-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail_us-east-1_20261021T1645Z_jhtljLcC0YSor4t2.json.gz",
+            "VersionId": "lolYG4ZpCJ26sfwRKt3AxajbjvlVVosD"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail/us-east-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail_us-east-1_20261021T1650Z_egpl3SdKr3h3lduX.json.gz",
+            "VersionId": "0aCozWOSvngvXe9JcvC4PrGmHyUIt_0J"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail/eu-north-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail_eu-north-1_20261021T1645Z_DbgD5b21Rcvy2kOi.json.gz",
+            "VersionId": "KTAuGgl_rvFsv1BcJFhVV61ifW1ay3ak"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail/us-east-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail_us-east-1_20261021T1645Z_p2Iy5XYlBMhw6Mcz.json.gz",
+            "VersionId": "oNM_YAmwY0Jc6MLeMRn9r5v17LKBgbjO"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/us-east-2/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_us-east-2_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "Yor0tb6h72k6.wlXjiyT2d7DTOh0_FF3"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/us-west-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_us-west-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "CJw6h1I8OoziKQvHKOkV.GV2BjtTVr.E"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/eu-north-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_eu-north-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "TmHePREqpQfRGx.kPc9_ymgc1DSs.s1G"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/ca-central-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_ca-central-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "pk1l8R_.BBGeFmGj1EsJ.QlKBG1DI_FD"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail/",
+            "VersionId": "Yqkvap6T0WJeoDLh6wVPFbfiQEjhfuE2"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail/us-east-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail_us-east-1_20261021T1640Z_y3loQVOWQhMgeqHn.json.gz",
+            "VersionId": "Ev6uQY_F_Oa3wCiu2mbmAM7Mat16bsYn"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/ap-northeast-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_ap-northeast-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "Wo0Fdqku6CrPrhAAe2Dpv7yR4roKsq5F"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/ap-northeast-2/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_ap-northeast-2_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "6YxOTP3GzSizaf9FguWHxroQNAiekkrW"
+        },
+        {
+            "Key": "AWSLogs/REDACTED_ACCOUNT_ID/CloudTrail-Digest/eu-west-1/2026/10/21/REDACTED_ACCOUNT_ID_CloudTrail-Digest_eu-west-1_lab05-security-trail_eu-north-1_20261021T163456Z.json.gz",
+            "VersionId": "IClaGM8Ai3H9EUL.uQ3X0KKhgDvpn_wO"
+        }
+    ]
+}

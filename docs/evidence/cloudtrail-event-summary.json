@@ -1,0 +1,185 @@
+{
+  "record_count": 30,
+  "events": [
+    {
+      "eventTime": "2026-10-21T16:36:00Z",
+      "eventSource": "cloudshell.amazonaws.com",
+      "eventName": "SendHeartBeat",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:36:03Z",
+      "eventSource": "cloudtrail.amazonaws.com",
+      "eventName": "GetTrailStatus",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:36:28Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketPublicAccessBlock",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:36:59Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketEncryption",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:06Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "GetCallerIdentity",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:06Z",
+      "eventSource": "cloudshell.amazonaws.com",
+      "eventName": "PutCredentials",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:05Z",
+      "eventSource": "cloudshell.amazonaws.com",
+      "eventName": "GetEnvironmentStatus",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:11Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:12Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:14Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:25Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:26Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:29Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketVersioning",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:39Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:27Z",
+      "eventSource": "cloudshell.amazonaws.com",
+      "eventName": "SendHeartBeat",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:36Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:42Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:42Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:50Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:48Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:54Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:37:55Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:38:00Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:38:05Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:38:11Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:38:16Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:38:27Z",
+      "eventSource": "cloudshell.amazonaws.com",
+      "eventName": "SendHeartBeat",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:39:14Z",
+      "eventSource": "sts.amazonaws.com",
+      "eventName": "AssumeRole",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:39:36Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "GetBucketAcl",
+      "awsRegion": "eu-north-1"
+    },
+    {
+      "eventTime": "2026-10-21T16:39:41Z",
+      "eventSource": "cloudshell.amazonaws.com",
+      "eventName": "SendHeartBeat",
+      "awsRegion": "eu-north-1"
+    }
+  ]
+}

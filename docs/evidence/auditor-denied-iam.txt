@@ -1,0 +1,2 @@
+
+aws: [ERROR]: An error occurred (AccessDenied) when calling the ListRoles operation: User: arn:aws:sts::REDACTED_ACCOUNT_ID:assumed-role/lab05-security-auditor/lab05-auditor-test is not authorized to perform: iam:ListRoles on resource: arn:aws:iam::REDACTED_ACCOUNT_ID:role/ because no identity-based policy allows the iam:ListRoles action

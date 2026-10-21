@@ -1,0 +1,27 @@
+aws_s3_bucket.cloudtrail_logs: Refreshing state... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+data.aws_iam_role.lab_operator: Reading...
+data.aws_caller_identity.current: Reading...
+data.aws_region.current: Reading...
+data.aws_iam_policy_document.auditor_permissions: Reading...
+data.aws_partition.current: Reading...
+data.aws_partition.current: Read complete after 0s [id=aws]
+data.aws_iam_policy_document.auditor_permissions: Read complete after 0s [id=4265355044]
+data.aws_region.current: Read complete after 0s [id=eu-north-1]
+data.aws_caller_identity.current: Read complete after 0s [id=REDACTED_ACCOUNT_ID]
+aws_s3_bucket_public_access_block.cloudtrail_logs: Refreshing state... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+aws_s3_bucket_versioning.cloudtrail_logs: Refreshing state... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+aws_s3_bucket_server_side_encryption_configuration.cloudtrail_logs: Refreshing state... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+data.aws_iam_policy_document.cloudtrail_bucket: Reading...
+data.aws_iam_policy_document.cloudtrail_bucket: Read complete after 0s [id=3647439228]
+aws_s3_bucket_policy.cloudtrail_logs: Refreshing state... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+data.aws_iam_role.lab_operator: Read complete after 0s [id=AccountFullAccessRole]
+data.aws_iam_policy_document.lab_role_trust: Reading...
+data.aws_iam_policy_document.lab_role_trust: Read complete after 0s [id=1361876450]
+aws_iam_role.security_auditor: Refreshing state... [id=lab05-security-auditor]
+aws_iam_role_policy.auditor_permissions: Refreshing state... [id=lab05-security-auditor:lab05-cloudtrail-event-history]
+aws_cloudtrail.security: Refreshing state... [id=arn:aws:cloudtrail:eu-north-1:REDACTED_ACCOUNT_ID:trail/lab05-security-trail]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.

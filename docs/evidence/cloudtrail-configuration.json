@@ -1,0 +1,15 @@
+{
+    "Trail": {
+        "Name": "lab05-security-trail",
+        "S3BucketName": "lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8",
+        "IncludeGlobalServiceEvents": true,
+        "IsMultiRegionTrail": true,
+        "HomeRegion": "eu-north-1",
+        "TrailARN": "arn:aws:cloudtrail:eu-north-1:REDACTED_ACCOUNT_ID:trail/lab05-security-trail",
+        "LogFileValidationEnabled": true,
+        "HasCustomEventSelectors": true,
+        "HasInsightSelectors": false,
+        "IsOrganizationTrail": false,
+        "RecursiveLogging": true
+    }
+}

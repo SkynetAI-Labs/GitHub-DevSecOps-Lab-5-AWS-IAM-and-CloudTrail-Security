@@ -1,0 +1,6 @@
+
+aws: [ERROR]: An error occurred (NoSuchBucket) when calling the GetBucketLocation operation: The specified bucket does not exist
+
+aws: [ERROR]: An error occurred (NoSuchEntity) when calling the GetRole operation: The role with name lab05-security-auditor cannot be found.
+
+aws: [ERROR]: An error occurred (TrailNotFoundException) when calling the GetTrail operation: Unknown trail: lab05-security-trail for the user: REDACTED_ACCOUNT_ID

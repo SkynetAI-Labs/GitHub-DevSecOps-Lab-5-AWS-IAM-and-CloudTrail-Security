@@ -1,0 +1,351 @@
+data.aws_iam_policy_document.auditor_permissions: Reading...
+data.aws_iam_role.lab_operator: Reading...
+data.aws_partition.current: Reading...
+data.aws_region.current: Reading...
+data.aws_caller_identity.current: Reading...
+aws_s3_bucket.cloudtrail_logs: Refreshing state... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+data.aws_iam_policy_document.auditor_permissions: Read complete after 0s [id=4265355044]
+data.aws_region.current: Read complete after 0s [id=eu-north-1]
+data.aws_partition.current: Read complete after 0s [id=aws]
+data.aws_caller_identity.current: Read complete after 0s [id=REDACTED_ACCOUNT_ID]
+aws_s3_bucket_public_access_block.cloudtrail_logs: Refreshing state... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+aws_s3_bucket_versioning.cloudtrail_logs: Refreshing state... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+aws_s3_bucket_server_side_encryption_configuration.cloudtrail_logs: Refreshing state... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+data.aws_iam_policy_document.cloudtrail_bucket: Reading...
+data.aws_iam_policy_document.cloudtrail_bucket: Read complete after 0s [id=3647439228]
+aws_s3_bucket_policy.cloudtrail_logs: Refreshing state... [id=lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8]
+data.aws_iam_role.lab_operator: Read complete after 0s [id=AccountFullAccessRole]
+data.aws_iam_policy_document.lab_role_trust: Reading...
+data.aws_iam_policy_document.lab_role_trust: Read complete after 0s [id=1361876450]
+aws_iam_role.security_auditor: Refreshing state... [id=lab05-security-auditor]
+aws_iam_role_policy.auditor_permissions: Refreshing state... [id=lab05-security-auditor:lab05-cloudtrail-event-history]
+aws_cloudtrail.security: Refreshing state... [id=arn:aws:cloudtrail:eu-north-1:REDACTED_ACCOUNT_ID:trail/lab05-security-trail]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # aws_cloudtrail.security will be destroyed
+  - resource "aws_cloudtrail" "security" {
+      - arn                           = "arn:aws:cloudtrail:eu-north-1:REDACTED_ACCOUNT_ID:trail/lab05-security-trail" -> null
+      - enable_log_file_validation    = true -> null
+      - enable_logging                = false -> null
+      - home_region                   = "eu-north-1" -> null
+      - id                            = "arn:aws:cloudtrail:eu-north-1:REDACTED_ACCOUNT_ID:trail/lab05-security-trail" -> null
+      - include_global_service_events = true -> null
+      - is_multi_region_trail         = true -> null
+      - is_organization_trail         = false -> null
+      - name                          = "lab05-security-trail" -> null
+      - region                        = "eu-north-1" -> null
+      - s3_bucket_name                = "lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8" -> null
+      - tags                          = {} -> null
+      - tags_all                      = {
+          - "ManagedBy" = "Terraform"
+          - "Project"   = "Lab5-IAM-CloudTrail"
+        } -> null
+        # (6 unchanged attributes hidden)
+
+      - event_selector {
+          - exclude_management_event_sources = [
+              - "kms.amazonaws.com",
+              - "rdsdata.amazonaws.com",
+            ] -> null
+          - include_management_events        = true -> null
+          - read_write_type                  = "All" -> null
+        }
+    }
+
+  # aws_iam_role.security_auditor will be destroyed
+  - resource "aws_iam_role" "security_auditor" {
+      - arn                   = "arn:aws:iam::REDACTED_ACCOUNT_ID:role/lab05-security-auditor" -> null
+      - assume_role_policy    = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "sts:AssumeRole"
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - AWS = "arn:aws:iam::REDACTED_ACCOUNT_ID:role/managed/AccountFullAccessRole"
+                        }
+                      - Sid       = "AllowLabOperator"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - create_date           = "2026-10-21T16:34:54Z" -> null
+      - description           = "Lab 5 role for restricted CloudTrail auditing" -> null
+      - force_detach_policies = false -> null
+      - id                    = "lab05-security-auditor" -> null
+      - managed_policy_arns   = [] -> null
+      - max_session_duration  = 3600 -> null
+      - name                  = "lab05-security-auditor" -> null
+      - path                  = "/" -> null
+      - tags                  = {} -> null
+      - tags_all              = {
+          - "ManagedBy" = "Terraform"
+          - "Project"   = "Lab5-IAM-CloudTrail"
+        } -> null
+      - unique_id             = "AROAT3FW44PQSCTQSGD7A" -> null
+        # (2 unchanged attributes hidden)
+
+      - inline_policy {
+          - name   = "lab05-cloudtrail-event-history" -> null
+          - policy = jsonencode(
+                {
+                  - Statement = [
+                      - {
+                          - Action    = "cloudtrail:LookupEvents"
+                          - Condition = {
+                              - StringEquals = {
+                                  - "aws:RequestedRegion" = "eu-north-1"
+                                }
+                            }
+                          - Effect    = "Allow"
+                          - Resource  = "*"
+                          - Sid       = "ReadRegionalEventHistory"
+                        },
+                    ]
+                  - Version   = "2012-10-17"
+                }
+            ) -> null
+        }
+    }
+
+  # aws_iam_role_policy.auditor_permissions will be destroyed
+  - resource "aws_iam_role_policy" "auditor_permissions" {
+      - id          = "lab05-security-auditor:lab05-cloudtrail-event-history" -> null
+      - name        = "lab05-cloudtrail-event-history" -> null
+      - policy      = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "cloudtrail:LookupEvents"
+                      - Condition = {
+                          - StringEquals = {
+                              - "aws:RequestedRegion" = "eu-north-1"
+                            }
+                        }
+                      - Effect    = "Allow"
+                      - Resource  = "*"
+                      - Sid       = "ReadRegionalEventHistory"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - role        = "lab05-security-auditor" -> null
+        # (1 unchanged attribute hidden)
+    }
+
+  # aws_s3_bucket.cloudtrail_logs will be destroyed
+  - resource "aws_s3_bucket" "cloudtrail_logs" {
+      - arn                         = "arn:aws:s3:::lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8" -> null
+      - bucket                      = "lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8" -> null
+      - bucket_domain_name          = "lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8.s3.amazonaws.com" -> null
+      - bucket_namespace            = "global" -> null
+      - bucket_prefix               = "lab05-cloudtrail-" -> null
+      - bucket_region               = "eu-north-1" -> null
+      - bucket_regional_domain_name = "lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8.s3.eu-north-1.amazonaws.com" -> null
+      - force_destroy               = false -> null
+      - hosted_zone_id              = "Z3BAZG2TWCNX0D" -> null
+      - id                          = "lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8" -> null
+      - object_lock_enabled         = false -> null
+      - policy                      = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "s3:GetBucketAcl"
+                      - Condition = {
+                          - StringEquals = {
+                              - "aws:SourceArn" = "arn:aws:cloudtrail:eu-north-1:REDACTED_ACCOUNT_ID:trail/lab05-security-trail"
+                            }
+                        }
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "cloudtrail.amazonaws.com"
+                        }
+                      - Resource  = "arn:aws:s3:::lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8"
+                      - Sid       = "CloudTrailCheckBucket"
+                    },
+                  - {
+                      - Action    = "s3:PutObject"
+                      - Condition = {
+                          - StringEquals = {
+                              - "aws:SourceArn" = "arn:aws:cloudtrail:eu-north-1:REDACTED_ACCOUNT_ID:trail/lab05-security-trail"
+                              - "s3:x-amz-acl"  = "bucket-owner-full-control"
+                            }
+                        }
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "cloudtrail.amazonaws.com"
+                        }
+                      - Resource  = "arn:aws:s3:::lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8/AWSLogs/REDACTED_ACCOUNT_ID/*"
+                      - Sid       = "CloudTrailWriteLogs"
+                    },
+                  - {
+                      - Action    = "s3:*"
+                      - Condition = {
+                          - Bool = {
+                              - "aws:SecureTransport" = "false"
+                            }
+                        }
+                      - Effect    = "Deny"
+                      - Principal = "*"
+                      - Resource  = [
+                          - "arn:aws:s3:::lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8/*",
+                          - "arn:aws:s3:::lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8",
+                        ]
+                      - Sid       = "DenyInsecureTransport"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - region                      = "eu-north-1" -> null
+      - request_payer               = "BucketOwner" -> null
+      - tags                        = {} -> null
+      - tags_all                    = {
+          - "ManagedBy" = "Terraform"
+          - "Project"   = "Lab5-IAM-CloudTrail"
+        } -> null
+        # (1 unchanged attribute hidden)
+
+      - grant {
+          - id          = "75a316c5d37c133e247df026cab59c295b0b259649c19af94d5aecaebb4686e9" -> null
+          - permissions = [
+              - "FULL_CONTROL",
+            ] -> null
+          - type        = "CanonicalUser" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - server_side_encryption_configuration {
+          - rule {
+              - bucket_key_enabled = false -> null
+
+              - apply_server_side_encryption_by_default {
+                  - sse_algorithm     = "AES256" -> null
+                    # (1 unchanged attribute hidden)
+                }
+            }
+        }
+
+      - versioning {
+          - enabled    = true -> null
+          - mfa_delete = false -> null
+        }
+    }
+
+  # aws_s3_bucket_policy.cloudtrail_logs will be destroyed
+  - resource "aws_s3_bucket_policy" "cloudtrail_logs" {
+      - bucket = "lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8" -> null
+      - id     = "lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8" -> null
+      - policy = jsonencode(
+            {
+              - Statement = [
+                  - {
+                      - Action    = "s3:GetBucketAcl"
+                      - Condition = {
+                          - StringEquals = {
+                              - "aws:SourceArn" = "arn:aws:cloudtrail:eu-north-1:REDACTED_ACCOUNT_ID:trail/lab05-security-trail"
+                            }
+                        }
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "cloudtrail.amazonaws.com"
+                        }
+                      - Resource  = "arn:aws:s3:::lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8"
+                      - Sid       = "CloudTrailCheckBucket"
+                    },
+                  - {
+                      - Action    = "s3:PutObject"
+                      - Condition = {
+                          - StringEquals = {
+                              - "aws:SourceArn" = "arn:aws:cloudtrail:eu-north-1:REDACTED_ACCOUNT_ID:trail/lab05-security-trail"
+                              - "s3:x-amz-acl"  = "bucket-owner-full-control"
+                            }
+                        }
+                      - Effect    = "Allow"
+                      - Principal = {
+                          - Service = "cloudtrail.amazonaws.com"
+                        }
+                      - Resource  = "arn:aws:s3:::lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8/AWSLogs/REDACTED_ACCOUNT_ID/*"
+                      - Sid       = "CloudTrailWriteLogs"
+                    },
+                  - {
+                      - Action    = "s3:*"
+                      - Condition = {
+                          - Bool = {
+                              - "aws:SecureTransport" = "false"
+                            }
+                        }
+                      - Effect    = "Deny"
+                      - Principal = "*"
+                      - Resource  = [
+                          - "arn:aws:s3:::lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8/*",
+                          - "arn:aws:s3:::lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8",
+                        ]
+                      - Sid       = "DenyInsecureTransport"
+                    },
+                ]
+              - Version   = "2012-10-17"
+            }
+        ) -> null
+      - region = "eu-north-1" -> null
+    }
+
+  # aws_s3_bucket_public_access_block.cloudtrail_logs will be destroyed
+  - resource "aws_s3_bucket_public_access_block" "cloudtrail_logs" {
+      - block_public_acls       = true -> null
+      - block_public_policy     = true -> null
+      - bucket                  = "lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8" -> null
+      - id                      = "lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8" -> null
+      - ignore_public_acls      = true -> null
+      - region                  = "eu-north-1" -> null
+      - restrict_public_buckets = true -> null
+    }
+
+  # aws_s3_bucket_server_side_encryption_configuration.cloudtrail_logs will be destroyed
+  - resource "aws_s3_bucket_server_side_encryption_configuration" "cloudtrail_logs" {
+      - bucket                = "lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8" -> null
+      - id                    = "lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8" -> null
+      - region                = "eu-north-1" -> null
+        # (1 unchanged attribute hidden)
+
+      - rule {
+          - blocked_encryption_types = [
+              - "SSE-C",
+            ] -> null
+          - bucket_key_enabled       = false -> null
+
+          - apply_server_side_encryption_by_default {
+              - sse_algorithm     = "AES256" -> null
+                # (1 unchanged attribute hidden)
+            }
+        }
+    }
+
+  # aws_s3_bucket_versioning.cloudtrail_logs will be destroyed
+  - resource "aws_s3_bucket_versioning" "cloudtrail_logs" {
+      - bucket                = "lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8" -> null
+      - id                    = "lab05-cloudtrail-f2f214e4f76dd8dc1b582d91e8" -> null
+      - region                = "eu-north-1" -> null
+        # (1 unchanged attribute hidden)
+
+      - versioning_configuration {
+          - mfa_delete = "Disabled" -> null
+          - status     = "Enabled" -> null
+        }
+    }
+
+Plan: 0 to add, 0 to change, 8 to destroy.
+
+─────────────────────────────────────────────────────────────────────────────
+
+Saved the plan to: lab05-destroy.tfplan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "lab05-destroy.tfplan"
