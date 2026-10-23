@@ -1,3 +1,5 @@
+![SkynetAI-Labs Lab 05 — AWS IAM and CloudTrail Security](skynet-lab-05.png)
+
 # GitHub DevSecOps Lab 05 — AWS IAM and CloudTrail Security
 
 A practical identity and cloud-auditing lab using Terraform, AWS IAM,
